@@ -1,0 +1,7 @@
+<div class="card" [routerLink]="['/details']" [queryParams]="{id:product.id}">
+    <img src={{product.image}} alt="Avatar">
+    <div class="container">
+        <h6><b>{{product.title}}</b></h6>
+        <p>Price : ${{product.price}}</p>
+    </div>
+</div>

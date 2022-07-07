@@ -1,0 +1,17 @@
+<h3>&nbsp;&nbsp;&nbsp;Listed Products:</h3>
+<div class="container">
+    <ng-container *ngFor="let product of products; let i = index;">
+        <div *ngIf="i%2==0" class="row custom-margin">
+            <div class="col-6" *ngIf="products[i]!=null">
+                <app-product-tile [product]="products[i]"></app-product-tile>
+            </div>
+            <div class="col-6" *ngIf="products[i+1]!=null">
+                <app-product-tile [product]="products[i+1]"></app-product-tile>
+            </div>
+        </div>
+    </ng-container>
+    <div class="float-right">
+        <button class="btn btn-secondary" (click)="Prev()">Prev</button>&nbsp;&nbsp;&nbsp; <button class="btn btn-primary"
+            (click)="Next()">Next</button>
+    </div>
+</div>
