@@ -1,5 +1,9 @@
 # FakeStoreApp
 
+![image](https://user-images.githubusercontent.com/16301198/177879365-3a4b66e7-03b7-45df-80dc-13652a8c7242.png)
+
+![image](https://user-images.githubusercontent.com/16301198/177879443-9351cd44-9233-420c-a515-7a32a9935ffb.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
 
 ## Development server
