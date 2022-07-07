@@ -5,3 +5,11 @@
 .float-right {
     float: right;
 }
+
+.float-left {
+    float: left;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
