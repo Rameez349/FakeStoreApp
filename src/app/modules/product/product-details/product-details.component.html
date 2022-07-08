@@ -4,15 +4,17 @@
 
         </div>
         <div class="col-6">
-            <div class="card" [routerLink]="['/details']" [queryParams]="{id:product.id}">
+            <b>{{loadingText}}</b>
+            <div class="card" *ngIf="product!=null">
                 <img src={{product.image}} alt="Avatar">
                 <div class="container">
                     <h6><b>{{product.title}}</b></h6>
                     <p>Price: ${{productPrice.toFixed(2)}}</p>
                     <p>{{product.description}}</p>
                     <p>Rating: {{product.rating.rate}}</p>
-                    <div><span>Discount: </span><input #discount type="number" min="0" value="0" max="100" class="form-control" (input)="CalculateDiscount(discount.value)"/></div>
-                    <br/>
+                    <div><span>Discount: </span><input #discount type="number" min="0" value="0" max="100"
+                            class="form-control" (input)="CalculateDiscount(discount.value)" /></div>
+                    <br />
                 </div>
             </div>
         </div>

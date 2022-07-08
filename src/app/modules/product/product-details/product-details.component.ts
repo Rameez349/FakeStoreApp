@@ -11,7 +11,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductDetailsComponent implements OnInit {
   public product!: IProduct
   public productPrice!: number;
-
+  public loadingText: string = "Loading data..Please Wait";
   @Input() id!: number;
   constructor(private route: ActivatedRoute, private productServcie: ProductService) { }
 
@@ -23,6 +23,7 @@ export class ProductDetailsComponent implements OnInit {
         this.productServcie.GetProductDetails(this.id).subscribe(res => {
           this.product = res;
           this.productPrice = this.product.price;
+          this.loadingText = "";
         });
       });
   }

@@ -1,14 +1,15 @@
 <div class="container">
-    <br/>
+    <br />
     <div class="row">
         <div class="col-11">
             <div class="float-right mr-50">
-                <button class="btn btn-secondary" (click)="Prev()">Prev</button>&nbsp;&nbsp;&nbsp; <button class="btn btn-primary"
-                    (click)="Next()">Next</button>
+                <button class="btn btn-secondary" (click)="Prev()">Prev</button>&nbsp;&nbsp;&nbsp; <button
+                    class="btn btn-primary" (click)="Next()">Next</button>
             </div>
         </div>
     </div>
-    <br/>
+    <br />
+    <b>{{loadingText}}</b>
     <ng-container *ngFor="let product of products; let i = index;">
         <div *ngIf="i%2==0" class="row custom-margin">
             <div class="col-6" *ngIf="products[i]!=null">
@@ -19,5 +20,5 @@
             </div>
         </div>
     </ng-container>
-    
+
 </div>

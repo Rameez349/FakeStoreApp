@@ -10,7 +10,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductListComponent implements OnInit {
   private allProducts!: IProduct[];
   public products: IProduct[] = new Array(6);
-  //@Output() changePage = new EventEmitter<any>(true);
+  public loadingText: string = "Loading data..Please Wait";
 
   @Input() pageNumber: number = 1;
   start: number = 0;
@@ -23,7 +23,7 @@ export class ProductListComponent implements OnInit {
         this.products[i] = this.allProducts[this.start + i];
       }
       this.start = this.pageNumber * 6;
-      console.log(this.start);
+      this.loadingText = "";
     });
   }
 
