@@ -1,6 +1,6 @@
 # FakeStoreApp
 
-### NOTE: Currently, I do not have experience writing uni tests for Angular. Due to time constraint unit tests have not been added for discount functionality.
+##### NOTE: Currently, I do not have experience writing uni tests for Angular. Due to time constraint unit tests have not been added for discount functionality.
 
 ![image](https://user-images.githubusercontent.com/16301198/177879365-3a4b66e7-03b7-45df-80dc-13652a8c7242.png)
 
