@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/16301198/177879443-9351cd44-9233-420c-a515-7a32a9935ffb.png)
 
-##### NOTE: Currently, I do not have experience writing uni tests for Angular. Due to time constraint unit tests have not been added for discount functionality.
+### NOTE: Currently, I do not have experience writing uni tests for Angular. Due to time constraint unit tests have not been added for discount functionality.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
 
